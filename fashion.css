@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Agdasima', sans-serif;
+}
+
+.grid{
+    width: 100%;
+    display: block;
+}
+.grid.wide{
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.Navbar{
+    right: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #000000;
+    box-shadow: 5px 5px 10px rgb(72, 72, 72);
+    z-index: 1;
+}
+.menu{
+    line-height: 60px;
+    margin-left: 10px;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 25px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+     font-size: 18px;
+     text-shadow: 2px 2px 5px red;
+     color: red;
+}
+.search{
+    line-height: 60px;
+    margin-right: 10px;
+}
+.fa-magnifying-glass{
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    transition: 0.4s;
+    padding: 10px 20px;
+}
+.search i:hover{
+    font-size: 18px;
+    color: red;
+}
+/* .search input[type="text"]
+{
+    width: 260px;
+    height: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 0 18px;
+  
+} */
+
+
+/* @media (min-width : 740px) and (max-width :1023px){
+   
+    .brain{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        box-shadow: 6px 6px 10px rgb(192, 192, 192);
+    }
+}
+
+@media (min-width : 1024)
+{
+    
+     .brain{
+        margin-top: 100px;
+         width: 100%;
+         text-align: center;
+         margin: 0 auto;
+         box-shadow: 6px 6px 10px rgb(192, 192, 192);
+     }
+} */
+.contain{
+    position: relative;
+    top: 60px;
+}
+.brain{
+    border-left: solid 1px rgb(196, 196, 196);
+    border-right: solid 1px rgb(196, 196, 196);
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    /* box-shadow: 6px 6px 10px rgb(157, 157, 157); */
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.descriprion{
+     display: block;
+     text-align: center;
+}
+.descriprion span{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.descriprion p{
+    margin-top: 20px;
+    font-size: 18px;
+    height: 40px;
+    color: #000104;
+}
+.background{
+    height: 800px;
+    width: 100%;
+    background-image: url('https://c.wallhere.com/photos/6f/68/women_fashion_Lisa_Dengler-19092.jpg!d');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    color: white;
+   
+}
+.text p{
+    letter-spacing  : 5px;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.text h1{
+    font-size: 66px;
+}
+.subcribe{
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    left: 30px;
+    background-color: rgba(161,161,161,0.6);
+    bottom: 26%;
+    font-weight: 600;
+    color: #282828;
+}
+.subcribe:hover{
+   background-color: red;
+   color: white;
+}
+.subcribe label{
+    padding: 30px 100px;
+}
+.overlay-subcrible.change{
+      display: block;
+  }
+.overlay-subcrible{
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(3,3,3,0.8);
+    margin: auto auto;
+    display: none;
+   
+}
+@keyframes myAnimation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.for-subcrible{
+    top: 30%;
+    left: 23%;
+     padding: 20px;
+    position: relative;
+     width: 800px;
+     background-color: white;
+     animation: myAnimation 0.6s ease-in-out;
+}
+.header-title{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-title h2{
+    margin-left: 26px;
+    letter-spacing : 5px
+}
+.header-title i{
+    margin-right: 30px;
+    font-size: 26px;
+    cursor: pointer;
+}
+.header-title i:hover{
+   
+    font-size: 24px;
+}
+.for-subcrible p{
+    margin-left: 26px;
+    margin-top: 20px;
+}
+.for-subcrible input[type="text"]
+{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 26px;
+    width: 90%;
+    height: 40px;
+    padding-left: 20px;
+    outline: none;
+    color: #767676;
+}
+.for-subcrible .submit{
+    transition: 0.2s;
+    cursor: pointer;
+    display: flex;
+    margin: 30px 0;
+    margin-left: 26px;
+    width: 93%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    background-color: #f44336;
+    color: white;
+}
+.for-subcrible .submit:hover{
+    background-color: beige;
+    color: #282828;
+}

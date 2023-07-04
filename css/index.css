@@ -1,0 +1,697 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Agdasima', sans-serif;
+}
+
+.grid{
+    width: 100%;
+    display: block;
+}
+.grid.wide{
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.Navbar{
+    right: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #000000;
+    box-shadow: 5px 5px 10px rgb(72, 72, 72);
+    z-index: 1;
+}
+.menu{
+    line-height: 60px;
+    margin-left: 10px;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 25px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+     font-size: 18px;
+     text-shadow: 2px 2px 5px red;
+     color: red;
+}
+.search{
+    line-height: 60px;
+    margin-right: 10px;
+}
+.fa-magnifying-glass{
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    transition: 0.4s;
+    padding: 10px 20px;
+}
+.search i:hover{
+    font-size: 18px;
+    color: red;
+}
+/* .search input[type="text"]
+{
+    width: 260px;
+    height: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 0 18px;
+  
+} */
+
+
+/* @media (min-width : 740px) and (max-width :1023px){
+   
+    .brain{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        box-shadow: 6px 6px 10px rgb(192, 192, 192);
+    }
+}
+
+@media (min-width : 1024)
+{
+    
+     .brain{
+        margin-top: 100px;
+         width: 100%;
+         text-align: center;
+         margin: 0 auto;
+         box-shadow: 6px 6px 10px rgb(192, 192, 192);
+     }
+} */
+.contain{
+    position: relative;
+    top: 60px;
+}
+.brain{
+    border-left: solid 1px rgb(196, 196, 196);
+    border-right: solid 1px rgb(196, 196, 196);
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    /* box-shadow: 6px 6px 10px rgb(157, 157, 157); */
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.descriprion{
+     display: block;
+     text-align: center;
+}
+.descriprion span{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.descriprion p{
+    margin-top: 20px;
+    font-size: 18px;
+    height: 40px;
+    color: #000104;
+}
+.background{
+    height: 800px;
+    width: 100%;
+    background-image: url('https://c.wallhere.com/photos/6f/68/women_fashion_Lisa_Dengler-19092.jpg!d');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    position: absolute;
+    top: 640px;
+    left: 30px;
+    color: white;
+   
+}
+.text p{
+    letter-spacing  : 5px;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.text h1{
+    font-size: 66px;
+}
+.subcribe{
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    left: 30px;
+    background-color: rgba(161,161,161,0.6);
+    top: 800px;
+    font-weight: 600;
+    color: #282828;
+}
+.subcribe:hover{
+   background-color: red;
+   color: white;
+}
+.subcribe label{
+    padding: 30px 100px;
+}
+.overlay-subcrible.change{
+      display: block;
+  }
+.overlay-subcrible{
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(3,3,3,0.8);
+    margin: auto auto;
+    display: none;
+   
+}
+@keyframes myAnimation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.for-subcrible{
+    top: 30%;
+    left: 23%;
+     padding: 20px;
+    position: relative;
+     width: 800px;
+     background-color: white;
+     animation: myAnimation 0.6s ease-in-out;
+}
+.header-title{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-title h2{
+    margin-left: 26px;
+    letter-spacing : 5px
+}
+.header-title i{
+    margin-right: 30px;
+    font-size: 26px;
+    cursor: pointer;
+}
+.header-title i:hover{
+   
+    font-size: 24px;
+}
+.for-subcrible p{
+    margin-left: 26px;
+    margin-top: 20px;
+}
+.for-subcrible input[type="text"]
+{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 26px;
+    width: 90%;
+    height: 40px;
+    padding-left: 20px;
+    outline: none;
+    color: #767676;
+}
+.for-subcrible .submit{
+    transition: 0.2s;
+    cursor: pointer;
+    display: flex;
+    margin: 30px 0;
+    margin-left: 26px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    background-color: #f44336;
+    color: white;
+}
+.for-subcrible .submit:hover{
+    background-color: beige;
+    color: #282828;
+}
+
+.overlay-search{
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(3,3,3,0.8);
+    display: none;
+    z-index: 3;
+
+
+}
+.overlay-search.show{
+    display: block;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(3,3,3,0.8);
+    z-index: 3;
+}
+
+.search-item{
+
+    transform: translateY(-280px);
+    background-color: white;
+    width: 800px;
+    border-radius: 10px;
+    height: 300px;
+    animation-name: search;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    padding-top: 15px;
+}
+
+@keyframes search{
+    0% {transform: translateY(-200);}
+    50%{transform: translateY(-100);}
+    75%{transform: translateY(50px);}
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+.ip{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.ip .fa-xmark{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ip i{
+    padding: 0;
+    line-height: 30px;
+}
+.ip input[type="text"]
+{
+    width: 70%;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    outline: none;
+    border: none;
+    line-height: 30px;
+    padding:  0px 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ip button{
+    outline: none;
+    padding: 4px 15px;
+    border-radius: 12px;
+    font-weight:bold;
+    border: none;
+    cursor: pointer;
+}
+.fa-magnifying-glass{
+    color: gray;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    
+}
+.result ul{
+    color: #767676;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.result ul li{
+    list-style: none;
+    padding: 13px 100px;
+    width: 100%;
+}
+.result ul li:hover{
+    background-color: rgba(161,161,161,0.6);
+    width: 100%;
+}
+.left-content{
+    margin-top: 20px;
+}
+.right-content{
+    margin-top: 20px;
+}
+.title-head{
+    text-align: center;
+    padding-top: 20px;
+    color: #767676;
+}
+
+.title-head h2{
+    margin-bottom: 20px;
+}
+.title-head p{
+    margin-bottom: 20px;
+}
+.page{
+    display: flex;
+    justify-content: center;
+}
+.page-nd{
+    width: 90%;
+    
+}
+.page-nd img{
+    width: 100%;
+    height: 450px;
+}
+.page-nd .mota{
+    margin-top: 20px;
+}
+.mota p{
+    text-align: justify;
+    line-height: 40px;
+}
+.active{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.active .like i{
+    cursor: pointer;
+    transition: 0.6s;
+    font-size: 20px;
+    padding: 0;
+}
+.like i:hover{
+    color: blue;
+}
+.active button{
+    cursor: pointer;
+    transition: 0.6s;
+    padding: 8px 16px;
+    outline: none;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+}
+.active button:hover{
+     color: #ffffff;
+     background-color: green;
+}
+.tgia{
+    margin-top: 10px;
+    display: none;
+    
+}
+.rl{
+    border: solid 1px rgb(159, 158, 158);
+}
+.inf-tg{
+    margin-top: 40px;
+    display: flex;
+
+}
+.inf-tg .img{
+    width: 120px;
+    height: 120px;
+}
+.inf-tg .img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.description{
+    margin-left: 20px;
+}
+.MyName .img{
+   padding: 0;
+   margin: 0;
+   height: 210px;
+}
+.MyName .img img{
+    width: 100%;
+    height: 100%;
+}
+.title-MyName h2{
+    padding:  8px 12px;
+}
+.title-MyName{
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    color: white;
+}
+.title-MyName p{
+    text-align: justify;
+    padding: 0px 12px;
+
+    padding-bottom: 20px;
+}
+.Popular{
+    margin-top: 20px;
+}
+.title-popular {
+    background-color: #000000;
+    color: white;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.popular-item {
+    display: flex;
+    padding: 20px;
+}
+.popular-item img{
+    width: 120px;
+    height: 120px;
+}
+.footer{
+    
+    background-color: #767676;
+}
+.details{
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.details p{
+    text-align: justify;
+    margin-top: 20px;
+}
+.rutgon{
+    color: white;
+    line-height: 60px;
+    display: none;
+}
+
+@media (max-width : 739px)
+{
+     .menu{
+        display: none;
+     }
+     .rutgon{
+        display: block;
+        margin-left: 20px;
+     }
+     .brain {
+        height: 100px;
+     }
+     .descriprion span {
+        font-size: 16px;
+        font-weight: bold;
+     }
+     .descriprion p {
+        margin-top: 15px;
+        font-size: 12px;
+        color: #000104;
+    }
+    .background {
+        height: 200px;
+        width: 100%;
+        background-image: url(https://c.wallhere.com/photos/6f/68/women_fashion_Lisa_Dengler-19092.jpg!d);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    .text {
+        position: absolute;
+        top: 120px;
+        left: 10px;
+        color: white;
+    }
+    .text p {
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .text h1 {
+        font-size: 16px;
+    }
+    .subcribe {
+        cursor: pointer;
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        font-size: 13px;
+        left: 10px;
+        background-color: rgba(161,161,161,0.6);
+        top: 200px;
+        font-weight: 600;
+        color: #282828;
+    }
+    .title-head {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 16px;
+        color: rgb(118, 118, 118);
+    }
+    .title-head h2 {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .title-head p {
+        margin-bottom: 20px;
+    }
+    .page-nd {
+        width: 100%;
+    }
+    .page-nd img {
+        width: 100%;
+        height: 250px;
+    }
+    .mota p {
+        text-align: justify;
+        line-height: 25px;
+        padding: 0 10px;
+    }
+    .like{
+        margin-left: 20px;
+    }
+    .replies{
+        margin-right: 20px;
+    }
+    .title-MyName h2 {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+    .for-subcrible {
+        top: 30%;
+        left:10%;
+        padding: 10px;
+        position: relative;
+        width: 400px;
+        background-color: white;
+        animation: 0.6s ease-in-out 0s 1 normal none running myAnimation;
+    }
+    .header-title h2 {
+        margin-left: 16px;
+        letter-spacing: 5px;
+    }
+    .header-title i {
+        margin-right: 16px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .nagative-nav{
+        position: absolute;
+        background-color: black;
+        width: 160px;
+        left: -20px;
+        text-align: center;
+        display: none;
+    }
+    .rutgon ul li{
+        position: relative;
+        list-style: none;
+        color: white;
+    }
+    .rutgon ul li a{
+        text-decoration: none;
+        color: white;
+        transition: 0.4s;
+        padding: 20px;
+    }
+    .rutgon ul li:hover .nagative-nav{
+        display: block;
+    }
+    .nagative-nav li a{
+        text-decoration: none;
+        color: white;
+    }
+    .nagative-nav li:hover{
+        background-color: #ff1f1f;
+    }
+    .fa-solid {
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .ip input[type="text"] {
+        width: 60%;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        outline: none;
+        border: none;
+        line-height: 30px;
+        padding: 0px 16px;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .ip button {
+        outline: none;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+    .result ul li {
+        list-style: none;
+        padding: 13px 45px;
+        width: 100%;
+        font-size: 13px;
+    }
+}
+/* responsive lại  */
